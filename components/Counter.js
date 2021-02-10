@@ -16,8 +16,11 @@ const Counter = () => {
         alignItems: "center"
       }}
     >
-      <Text></Text>
-      <Button></Button>
+                    {/* {state 또는 porp} */}
+      <Text>You clicked {count} times</Text>
+               {/* state변경함수명(변경할state값) */}
+               {/* state 변경하면 화면이 다시 렌더링됨 */}
+      <Button onPress={() => setCount(count+1)} title="Click me!"></Button>
 
     </View>
   )
